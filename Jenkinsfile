@@ -19,5 +19,11 @@ pipeline {
                     sh "cal"
             }
           }
+            stage ('Deploy'){
+                steps {
+                    sh "echo I LOVe LINUX"
+            }
+          }
+
         }
     }
