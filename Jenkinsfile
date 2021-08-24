@@ -14,9 +14,10 @@ pipeline {
                 }
             }
             
-            stage ('my calendar')
+            stage ('my calendar'){
                 steps {
                     sh "cal"
             }
+          }
         }
     }
