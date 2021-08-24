@@ -12,7 +12,11 @@ pipeline {
                 steps {
                     sh "date"
                 }
+            }
             
+            stage ('my calendar')
+                steps {
+                    sh "cal"
             }
         }
     }
