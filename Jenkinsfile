@@ -7,5 +7,12 @@ pipeline {
                     sh "echo I love Abbey Cheche"  
                 }
             }
+            
+            stage ('checking date') {
+                steps {
+                    sh "date"
+                }
+            
+            }
         }
     }
