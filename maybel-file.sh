@@ -1,3 +1,4 @@
 #!/bin/bash
 clear
-yum update -y 
+yum install httpd -y
+yum update -y
