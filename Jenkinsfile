@@ -4,8 +4,7 @@ pipeline {
         stages { 
             stage ('Build') { 
                 steps { 
-                    echo 
-                    'Running build phase. ' 
+                    sh "echo I love Abbey Cheche"  
                 }
             }
         }
