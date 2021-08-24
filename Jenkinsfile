@@ -1,38 +1,12 @@
 
 pipeline { 
-agent any 
-    stages { 
-        stage ('Ready to build') { 
-          step {
-              sh "echo abbey cheche"
-          }
-          
- 
+    agent any 
+        stages { 
+            stage ('Build') { 
+                steps { 
+                    echo 
+                    'Running build phase. ' 
+                }
+            }
         }
-        stage ('Checking date') { 
-          step {
-             sh "date"
-          }
-        
-        }
-        stage ('Calendar') { 
-          step {
-            sh "cal"
-          }
-        
-        }
-        stage ('Deploy Love') { 
-          step {
-             sh "echo I love you"
-          }
-        
-        }
-        stage ('List') {
-          step {
-             sh "ls"
-          }
- 
-        }
- 
-    }           
- }
+    }
